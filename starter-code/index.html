@@ -1,49 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Workit landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
 
-  Apply for access
+    <title>Frontend Mentor | Workit landing page</title>
+  </head>
 
-  Data tailored to your needs.
+  <body>
+    <section class="hero-section">
+      <header class="header container">
+        <img src="./assets/images/logo-light.svg" alt="Logo" />
+        <button class="btn btn--secondary">Apply for access</button>
+      </header>
 
-  Learn more
-  
-  1
+      <div class="hero-main container">
+        <h1 class="heading heading--l">
+          Data <span>tailored</span> to your needs.
+        </h1>
+        <button class="btn btn--primary">Learn more</button>
+      </div>
 
-  Actionable insights
-  
-  Optimize your products, improve customer satisfaction and stay ahead of the competition 
-  with our product data analytics.
+      <img class="img-hero" src="./assets/images/image-hero.png" alt="Hero" />
+      <img class="pattern1" src="./assets/images/bg-pattern-1.svg" alt="" />
+      <img class="pattern2" src="./assets/images/bg-pattern-2.svg" alt="" />
+    </section>
 
-  2
+    <section class="features-section">
+      <div class="features-section__container container">
+        <div class="features-section__item">
+          <div class="features-section__order">1</div>
+          <div class="features-section__content">
+            <h3 class="heading heading--s features-section__tittle">
+              Actionable insights
+            </h3>
+            <p class="features-section__description">
+              Optimize your products, improve customer satisfaction and stay
+              ahead of the competition with our product data analytics.
+            </p>
+          </div>
+        </div>
+        <div class="features-section__item">
+          <div class="features-section__order">2</div>
+          <div class="features-section__content">
+            <h3 class="heading heading--s features-section__tittle">
+              Data-driven decisions
+            </h3>
+            <p class="features-section__description">
+              Make data-driven decisions with our product data analytics. Our
+              AI-generated reports help you unlock insights hidden in your
+              product data.
+            </p>
+          </div>
+        </div>
+        <div class="features-section__item">
+          <div class="features-section__order">3</div>
+          <div class="features-section__content">
+            <h3 class="heading heading--s features-section__tittle">
+              Always affordable
+            </h3>
+            <p class="features-section__description">
+              Always affordable pricing that scales with your business. Get
+              top-quality product data analytics services without hidden costs
+              or unexpected fees.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Data-driven decisions
+    <section class="author-section">
+      <div class="author-section__container container">
+        <img
+          class="img-author"
+          src="./assets/images/image-founder.webp"
+          alt="Founder"
+        />
 
-  Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-  you unlock insights hidden in your product data.
+        <div class="author-section__content">
+          <h2 class="heading heading--m author-section__tittle">
+            Be the first to test
+          </h2>
+          <p class="author-section__description">
+            Hi, I'm Louis Graham, the founder of the company. Book a demo call
+            with me to become a beta tester for our app and kickstart your
+            company. Apply for access below and I'll be in touch to schedule a
+            call.
+          </p>
+          <button class="btn btn--primary">Apply for access</button>
+        </div>
 
-  3
+        <img class="pattern3" src="./assets/images/bg-pattern-3.svg" alt="" />
+      </div>
+    </section>
 
-  Always affordable
-
-  Always affordable pricing that scales with your business. Get top-quality product data 
-  analytics services without hidden costs or unexpected fees.
-
-  Be the first to test
-
-  Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-  beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-  in touch to schedule a call.
-
-  Apply for access
-
-</body>
+    <footer class="site-footer">
+      <div class="site-footer__logo">
+        <img src="./assets/images/logo-dark.svg" alt="Logo" />
+      </div>
+      <div class="site-footer__icons">
+        <img src="./assets/images/icon-facebook.svg" alt="Logo Facebook" />
+        <img src="./assets/images/icon-twitter.svg" alt="Logo Twitter" />
+        <img src="./assets/images/icon-instagram.svg" alt="Logo Instagram" />
+      </div>
+    </footer>
+  </body>
 </html>

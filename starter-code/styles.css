@@ -1,0 +1,501 @@
+:root {
+  --primary: hsl(150, 100%, 63%);
+  --text-primary: hsl(273, 85%, 13%);
+  --secondary: transparent;
+  --text-secondary: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Fraunces 144";
+  src: url(./assets/fonts/fraunces/Fraunces-VariableFont_SOFTWONKopszwght.ttf)
+    format("truetype-variations");
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf)
+    format("truetype-variations");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  color: var(--text-primary);
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 343px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 688px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1114px;
+  }
+}
+
+.heading {
+  font-family: "Fraunces 144", serif;
+  font-weight: 600;
+}
+
+.heading--l {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.heading--m {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.heading--s {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading--l {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .heading--m {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heading--l {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .heading--m {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .heading--s {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.btn {
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.btn--primary {
+  color: var(--text-primary);
+  background-color: var(--primary);
+  border: 2px solid transparent;
+  padding: 8px 22px 11px 22px;
+}
+
+.btn--primary:hover {
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+}
+
+.btn--secondary {
+  border: 0;
+  color: var(--text-secondary);
+  background-color: transparent;
+  text-decoration: underline var(--primary) 3px;
+  text-underline-offset: 8px;
+}
+
+.btn--secondary:hover {
+  color: var(--primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 18px;
+  }
+
+  .btn--primary {
+    padding: 11px 25px 14px 25px;
+  }
+}
+
+.hero-section {
+  background-image: url(./assets/images/bg-hero.png);
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  padding-top: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    padding-top: 56px;
+  }
+}
+
+.hero-section .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section .hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 156px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .hero-main {
+    padding-top: 58px;
+    padding-bottom: 203px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section .hero-main {
+    padding-bottom: 326px;
+  }
+}
+
+.hero-section .heading--l {
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 340px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .heading--l {
+    max-width: 530px;
+    margin-bottom: 39px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section .heading--l {
+    max-width: 635px;
+    margin-bottom: 37px;
+  }
+}
+
+.hero-section .heading--l > span {
+  text-decoration: underline var(--primary) 3px;
+  text-underline-offset: 8px;
+}
+
+.hero-section .img-hero {
+  width: 298px;
+  height: 178px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -85px;
+}
+
+.hero-section .pattern1 {
+  display: none;
+}
+
+.hero-section .pattern2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section .img-hero {
+    width: 479px;
+    height: 286px;
+    bottom: -138px;
+  }
+
+  .hero-section .pattern1 {
+    display: block;
+    position: absolute;
+    top: 75px;
+    left: -230px;
+  }
+
+  .hero-section .pattern2 {
+    display: block;
+    position: absolute;
+    top: 250px;
+    right: -80px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section .img-hero {
+    width: 715px;
+    height: 427px;
+    bottom: -151px;
+  }
+
+  .hero-section .pattern1 {
+    top: 116px;
+    left: -138px;
+  }
+
+  .hero-section .pattern2 {
+    top: 314px;
+    right: -48px;
+  }
+}
+
+.features-section {
+  background-image: url(./assets/images/bg-features.png);
+  background-position: bottom;
+  background-size: cover;
+  margin-top: -89px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-section {
+    margin-top: -137px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-section {
+    margin-top: -226px;
+  }
+}
+
+.features-section__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 245px;
+  padding-bottom: 71px;
+}
+
+.features-section__item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-section__container {
+    align-items: center;
+    padding-top: 341px;
+    padding-bottom: 103px;
+  }
+
+  .features-section__item {
+    display: flex;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-section__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    padding-top: 481px;
+    padding-bottom: 171px;
+  }
+
+  .features-section__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.features-section__item:last-child {
+  margin-bottom: 0;
+}
+
+.features-section__content {
+  max-width: 476px;
+  margin-top: 24px;
+}
+
+.features-section__order {
+  font-family: "Fraunces 144", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid hsl(271, 12%, 34%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.features-section__tittle {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-section__content {
+    margin-top: 0;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-section__content {
+    margin-top: 56px;
+    margin-left: 0;
+  }
+
+  .features-section__order {
+    font-size: 24px;
+    line-height: 40px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .features-section__tittle {
+    margin-bottom: 28px;
+  }
+}
+
+.author-section__container {
+  position: relative;
+}
+
+.author-section .img-author {
+  width: 281px;
+  height: 281px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.author-section__content {
+  background-color: var(--text-primary);
+  color: var(--text-secondary);
+  text-align: center;
+  width: 343px;
+  position: absolute;
+  top: 328px;
+  padding: 31px;
+}
+
+.author-section__description {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.author-section .pattern3 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .author-section .img-author {
+    top: 110px;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .author-section__content {
+    text-align: left;
+    width: 514px;
+    top: 251px;
+    right: 0;
+    padding: 56px;
+  }
+
+  .author-section__description {
+    margin-top: 24px;
+  }
+
+  .author-section .pattern3 {
+    display: block;
+    position: absolute;
+    top: 520px;
+    left: 456px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .author-section .img-author {
+    width: 477px;
+    height: 477px;
+  }
+
+  .author-section__content {
+    width: 730px;
+    top: 283px;
+    padding: 64px;
+  }
+
+  .author-section__description {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .author-section .pattern3 {
+    top: 546px;
+    left: 819px;
+  }
+}
+
+.site-footer {
+  width: 116px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 777px auto 63px;
+}
+
+.site-footer__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer {
+    margin: 706px auto 121px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site-footer {
+    margin: 817px auto 110px;
+  }
+}
