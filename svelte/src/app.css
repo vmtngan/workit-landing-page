@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Fraunces 144';
+	src: url(/fonts/fraunces/Fraunces-VariableFont_wght.ttf) format('truetype-variations');
+}
+
+@font-face {
+	font-family: Manrope;
+	src: url(/fonts/manrope/Manrope-VariableFont_wght.ttf) format('truetype-variations');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
